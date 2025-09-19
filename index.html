@@ -1,2 +1,148 @@
-<h1>Welcome to my store</h1>
-<p> coming soon... </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The MIREZZA Collection</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .scroll-animation-element {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .fade-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white leading-relaxed">
+
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 p-6 md:p-8 bg-gray-900 bg-opacity-80 backdrop-blur-sm">
+        <nav class="flex justify-between items-center max-w-7xl mx-auto">
+            <div class="text-2xl font-bold tracking-wider uppercase">MIREZZA</div>
+            <ul class="hidden md:flex space-x-8 font-medium">
+                <li><a href="#" class="hover:text-gray-400 transition-colors">Home</a></li>
+                <li><a href="#" class="hover:text-gray-400 transition-colors">Products</a></li>
+                <li><a href="#" class="hover:text-gray-400 transition-colors">About Us</a></li>
+                <li><a href="#" class="hover:text-gray-400 transition-colors">Contact</a></li>
+            </ul>
+            <a href="#" class="border border-white text-sm px-6 py-2 rounded-full hover:bg-white hover:text-gray-900 transition-all">Shop Now</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-screen flex items-center justify-center text-center">
+            <div class="absolute inset-0 bg-[url('https://placehold.co/1920x1080/1f2937/FFFFFF?text=Luxurious+Collection')] bg-cover bg-center opacity-40"></div>
+            <div class="relative z-10 p-4 md:p-8 scroll-animation-element">
+                <h1 class="text-4xl md:text-7xl font-light tracking-wide md:tracking-wider">Experience Unmatched Craftsmanship</h1>
+                <p class="mt-4 md:mt-6 text-base md:text-xl max-w-3xl mx-auto font-light">
+                    Every piece in our collection is meticulously crafted with precision and an unwavering commitment to quality, defining true luxury.
+                </p>
+                <button class="mt-8 md:mt-10 px-8 py-3 rounded-full bg-white text-gray-900 text-sm font-semibold hover:bg-gray-200 transition-colors">Discover the Collection</button>
+            </div>
+        </section>
+
+        <!-- Product Showcase Section -->
+        <section class="py-20 md:py-32 bg-gray-900 max-w-7xl mx-auto px-4 md:px-8">
+            <div class="text-center scroll-animation-element">
+                <h2 class="text-3xl md:text-5xl font-light">Featured Products</h2>
+                <p class="mt-2 text-sm md:text-base text-gray-400">Hand-selected for our most discerning clients.</p>
+            </div>
+            <div class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="group scroll-animation-element">
+                    <div class="overflow-hidden rounded-xl aspect-w-4 aspect-h-3">
+                        <img src="https://placehold.co/600x600/374151/FFFFFF?text=Luxury+Watch" alt="Luxury Watch" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 rounded-xl">
+                    </div>
+                    <div class="mt-6 text-center">
+                        <h3 class="text-lg font-medium text-gray-200">The Timeless Chronograph</h3>
+                        <p class="mt-1 text-sm text-gray-400">$15,000</p>
+                        <button class="mt-4 text-xs font-semibold uppercase tracking-wide border border-gray-500 px-4 py-2 rounded-full hover:bg-gray-800 transition-colors">View Details</button>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="group scroll-animation-element">
+                    <div class="overflow-hidden rounded-xl aspect-w-4 aspect-h-3">
+                        <img src="https://placehold.co/600x600/374151/FFFFFF?text=Designer+Bag" alt="Designer Bag" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 rounded-xl">
+                    </div>
+                    <div class="mt-6 text-center">
+                        <h3 class="text-lg font-medium text-gray-200">The Signature Tote</h3>
+                        <p class="mt-1 text-sm text-gray-400">$3,500</p>
+                        <button class="mt-4 text-xs font-semibold uppercase tracking-wide border border-gray-500 px-4 py-2 rounded-full hover:bg-gray-800 transition-colors">View Details</button>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="group scroll-animation-element">
+                    <div class="overflow-hidden rounded-xl aspect-w-4 aspect-h-3">
+                        <img src="https://placehold.co/600x600/374151/FFFFFF?text=Fine+Jewelry" alt="Fine Jewelry" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 rounded-xl">
+                    </div>
+                    <div class="mt-6 text-center">
+                        <h3 class="text-lg font-medium text-gray-200">The Aurora Diamond Ring</h3>
+                        <p class="mt-1 text-sm text-gray-400">$25,000</p>
+                        <button class="mt-4 text-xs font-semibold uppercase tracking-wide border border-gray-500 px-4 py-2 rounded-full hover:bg-gray-800 transition-colors">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand Story/About Section -->
+        <section class="py-20 md:py-32 bg-gray-800 max-w-7xl mx-auto px-4 md:px-8 rounded-2xl my-20">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 scroll-animation-element">
+                    <img src="https://placehold.co/800x600/1f2937/FFFFFF?text=Our+Legacy" alt="Our Legacy" class="w-full h-auto rounded-xl shadow-lg">
+                </div>
+                <div class="md:w-1/2 text-center md:text-left scroll-animation-element">
+                    <h2 class="text-3xl md:text-4xl font-light tracking-wide">A Legacy of Excellence</h2>
+                    <p class="mt-4 text-gray-400 text-sm md:text-base">
+                        MIREZZA was founded on the principle that true luxury is found in the details. From our humble beginnings, we have dedicated ourselves to preserving artisanal traditions while embracing modern innovation. Each item is a testament to our passion, a product of countless hours of skillful craftsmanship and dedication. We don't just create products; we craft heirlooms.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-12 md:py-20 bg-gray-900 text-gray-400 text-center">
+        <p>&copy; 2024 MIREZZA. All rights reserved.</p>
+        <div class="mt-4 flex justify-center space-x-6">
+            <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+            <a href="#" class="hover:text-white transition-colors">Contact Us</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript for scroll animations -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            const elements = document.querySelectorAll('.scroll-animation-element');
+            elements.forEach(el => observer.observe(el));
+        });
+    </script>
+
+</body>
+</html>
